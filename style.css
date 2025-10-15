@@ -1,0 +1,179 @@
+:root {
+    --accent: #e67e22; /* Naranja chiquitano */
+    --accent-dark: #c65c0f; /* Naranja oscuro */
+    --bg: #fff7ee; /* Fondo cálido */
+    --muted: #6b5b4b; /* Marrón suave */
+    --green: #4CAF50; /* Verde natural */
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: #2b2b2b;
+  }
+  
+  /* CONTENEDOR PRINCIPAL */
+  .container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  /* LOGO PRINCIPAL */
+  .logo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: var(--accent);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-principal img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  /* LOGO SECUNDARIO */
+  .logo-secundario {
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  .logo-secundario img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* TARJETA DE FORMULARIO */
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 2px solid var(--accent);
+  }
+  
+  /* FILAS Y CAMPOS */
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .field {
+    flex: 1;
+  }
+  
+  label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.2);
+  }
+  
+  /* BOTONES */
+  button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s, transform 0.2s;
+  }
+  
+  button.primary {
+    background: var(--accent);
+    color: white;
+  }
+  
+  button.primary:hover {
+    background: var(--accent-dark);
+    transform: scale(1.03);
+  }
+  
+  button.ghost {
+    background: white;
+    border: 1px solid #ccc;
+  }
+  
+  button.ghost:hover {
+    background: #f5f5f5;
+  }
+  
+  /* TARIFA */
+  .fare {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--green);
+    text-align: center;
+  }
+  
+  /* IMAGEN DE CONTACTO Y TELÉFONOS */
+  .contacto {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .contacto img {
+    width: 260px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .contacto p {
+    font-size: 16px;
+    color: var(--accent-dark);
+    background: rgba(255, 235, 215, 0.7);
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  /* TITULOS */
+  h1 {
+    font-size: 26px;
+    margin: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    color: var(--accent-dark);
+    margin-bottom: 20px;
+  }
+  
+  .lead {
+    font-style: italic;
+    color: #f9f9f9;
+    font-size: 15px;
+  }
+  

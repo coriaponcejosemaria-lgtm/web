@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Servicio de Taximovil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Logo principal -->
+      <div class="logo-principal">
+        <img src="/img/LOGO.png" alt="Logo Principal Taximovil" />
+        <div>
+          <h1>Taximovil EL MATIEÑO</h1>
+          <p class="lead">Reserva rápida, tarifa clara</p>
+        </div>
+      </div>
+
+      <!-- Logo secundario con fondo -->
+      <div class="logo-secundario">
+        <img src="/img/LOGO.png" alt="Logo Secundario con fondo" />
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>RESERVA TAXIMOVIL</h2>
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="from">Origen</label>
+              <input id="from" type="text" required>
+            </div>
+            <div class="field">
+              <label for="to">Destino</label>
+              <input id="to" type="text" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="distance">Distancia (km)</label>
+              <input id="distance" type="number" required>
+            </div>
+            <div class="field">
+              <label for="vehicle">Tipo de vehículo</label>
+              <select id="vehicle">
+                <option value="standard">Standard</option>
+                <option value="comfort">Comfort</option>
+                <option value="van">Van</option>
+                <option value="premium">Premium</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="datetime">Fecha y hora</label>
+              <input id="datetime" type="datetime-local" required>
+            </div>
+          </div>
+          <button type="button" id="calcBtn" class="ghost">Calcular tarifa</button>
+          <button type="submit" class="primary">Confirmar</button>
+          <div class="fare"><span id="farePrice">Bs. 0.00</span></div>
+
+          <!-- Imagen de ejemplo con número de teléfono -->
+          <div class="contacto">
+            <img src="/img/TAXIMATIEÑO.png" alt="Ejemplo y contacto Taximovil" />
+            <p>📞 Llámanos: <strong>4-4355092 / 4-4355596 / 76485115</strong></p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="scrip.js"></script>
+</body>
+</html>
